@@ -1,0 +1,221 @@
+html, h1, h2, ul, figure{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #fafafd;
+    color: #7b7b80;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+main{
+    max-width: 2650px;
+    margin: auto;
+}
+header{
+    background: rgba(0,0,0,0.8);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(15px);
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li{
+    display: block;
+}
+header ul li a{
+    color: #b0b0b0;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header .menu-mobile{
+    display: none;
+}
+
+.container{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h2-ip12{
+    font-size: 50px;
+}
+
+.from{
+    padding: 10px 0;
+}
+.from p{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.ribbon{
+    text-align: center;
+    background: #f3f3f6;
+    padding: 10px 0;
+}
+.ribbon .biru{
+    color: #0964c3;
+}
+
+.banner{
+    text-align: center;
+    background-image: url("../images/banner/hero_iphone_13pro_largetall.jpg");
+    background-position: center;
+    height: 600px;
+    margin-bottom: 10px;
+}
+.banner-inside{
+    text-align: center;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 10px;
+}
+.banner h1, .banner-inside h1{
+    font-size: 50px;
+    color: black;
+    font-weight: 500;
+    padding-top: 50px;
+}
+.banner h2, .banner-inside h2{
+    font-size: 25px;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.banner p, .banner-inside p{
+    margin: 5px 0;
+}
+
+.hitam{
+    background-image: url("../images/banner/hero_iphone_13_largetall.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0;
+    height: 500px;
+}
+.hitam h2{
+    color: white;
+    margin-bottom: 15px;
+}
+.hitam p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.hitam .pro12{
+    padding: 30px 0 0 0;
+}
+
+.hitam-menu{
+    display: flex;
+    justify-content: center;
+}
+.hitam-menu li{
+    display: block;
+}
+.hitam-menu li a{
+    color: #2590fa;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.fitness{
+    text-align: center;
+    color: black;
+    padding: 30px 0;
+}
+.fitness .jam{
+    padding-top: 20px;
+}
+
+.responsive-image{
+    width: 100%;
+}
+
+.tile{
+    display: flex;
+}
+.tile .item{
+    text-align: center;
+    width: 50%;
+    height: 550px;
+    position: relative;
+    background: tomato;
+    overflow: hidden;
+}
+.tile .item .image-wrapper{
+    position: absolute;
+    top: 0;
+    left: calc(50% + 0px);
+    z-index: 1;
+    right: auto;
+    bottom: 0;
+    transform: translate(-50%);
+}
+.tile .item .image-wrapper .image{
+    background-image: url("../images/banner/promo_airpods_large.jpg");
+    background-repeat: no-repeat;
+    background-size: 1262px 580px;
+    width: 1262px;
+    height: 580px;
+}
+.tile .item .title{
+    position: relative;
+    z-index: 2;
+    padding-top: 50px;
+    color: #000;
+}
+.tile .item .title h2{
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+/* --------------- Begin Responsive CSS -------------- */
+@media (max-width: 1200px) {}
+@media (max-width: 990px) {
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .banner{
+        background-image: url("../images/banner/hero_iphone_13pro_small.jpg");
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+    header .menu-mobile{
+        display: flex;
+    }
+    header .menu{
+        display: none;
+    }
+    .hitam{
+        background-image: url("../images/banner/hero_iphone_13_mediumtall.jpg");
+        height: 450px;
+    }
+}
+@media (max-width: 480px) {
+    .hitam{
+        background-image: url("../images/banner/hero_iphone_13_small.jpg");
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-width: 320px) {}
+/* --------------- End Responsive CSS -------------- */
